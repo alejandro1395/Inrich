@@ -1,0 +1,367 @@
+----------------------------------------------------------------
+INRICH v.1.0 : Thu Jan 30 15:12:56 2020
+http://atgu.mgh.harvard.edu/inrich
+----------------------------------------------------------------
+       project-title  (-o)  :  test
+        test-regions  (-a)  :  ../input_files/associated_lifespan_intervals.dat
+           gene-list  (-g)  :  ../input_files/entrez.gene.map
+     background-genes (-b)  :  --no background set--
+          range-file  (-x)  :  --no ranges--
+         target-file  (-t)  :  ../input_files/kegg.set
+         compact      (-k)  :  YES
+ target size-filter  (-i,j) :  5..200
+    min-obs threshold (-z)  :  3
+           test-type  (-1)  :  INTERVALS
+       top-N-regions  (-n)  :   --all--
+           kb-window  (-w)  :  20
+            map-file  (-m)  :  ../input_files/reference_snp.snps
+       match-density  (-d)  :  0.1
+         pre-compute  (-c)  :  YES
+         match-genes  (-e)  :  YES
+      num-replicates  (-r)  :  10000
+      num-bootstraps  (-q)  :  5000
+         random-seed  (-f)  :  863477377
+           display-p  (-p)  :  0.1
+   printPermutations  (-s)  :  NO
+----------------------------------------------------------------
+
+2917.79Mb total sequence length on 23 chromosomes
+  read 8313 map positions
+  read 17529 reference genes
+  read 5519 unique genes/targets, in 221 groups
+  15271 total gene/group pairs
+  182 genes/targets not found in main gene-list
+  after size filters, 206 groups remaining
+  read 79 intervals
+  * WARNING: no SNP map info exists for interval chr1:109821511..109817192
+  * WARNING: no SNP map info exists for interval chr1:109821511..109817590
+  * WARNING: no SNP map info exists for interval chr1:109821511..109818530
+  * WARNING: no SNP map info exists for interval chr1:109821511..109822166
+  * WARNING: no SNP map info exists for interval chr1:114448389..114445880
+  * WARNING: no SNP map info exists for interval chr1:154397416..154395946
+  * WARNING: no SNP map info exists for interval chr1:154422067..154395946
+  * WARNING: no SNP map info exists for interval chr6:161010118..161005610
+  * WARNING: no SNP map info exists for interval chr9:22103813..22084310
+  * WARNING: no SNP map info exists for interval chr9:22115286..22100176
+  * WARNING: no SNP map info exists for interval chr9:22115959..22100176
+  * WARNING: no SNP map info exists for interval chr9:22124477..22100176
+  * WARNING: no SNP map info exists for interval chr9:22124477..22103813
+  * WARNING: no SNP map info exists for interval chr9:22124477..22119195
+  * WARNING: no SNP map info exists for interval chr11:100593538..100610546
+  * WARNING: no SNP map info exists for interval chr12:111884608..111907431
+  * WARNING: no SNP map info exists for interval chr12:111884608..111932800
+  * WARNING: no SNP map info exists for interval chr12:111884608..112007756
+  * WARNING: no SNP map info exists for interval chr12:111907431..111932800
+  * WARNING: no SNP map info exists for interval chr12:111910219..111884608
+  * WARNING: no SNP map info exists for interval chr12:111910219..111932800
+  * WARNING: no SNP map info exists for interval chr12:111973358..111884608
+  * WARNING: no SNP map info exists for interval chr12:111973358..111932800
+  * WARNING: no SNP map info exists for interval chr12:112007756..111932800
+  * WARNING: no SNP map info exists for interval chr12:112059557..111884608
+  * WARNING: no SNP map info exists for interval chr12:112059557..111932800
+  * WARNING: no SNP map info exists for interval chr12:112059557..112007756
+  * WARNING: no SNP map info exists for interval chr12:112059557..112072424
+  * WARNING: no SNP map info exists for interval chr12:112273499..112072424
+  * WARNING: no SNP map info exists for interval chr12:112486818..112883476
+  * WARNING: no SNP map info exists for interval chr12:112591686..112273499
+  * WARNING: no SNP map info exists for interval chr12:112591686..112486818
+  * WARNING: no SNP map info exists for interval chr12:112591686..112883476
+  * WARNING: no SNP map info exists for interval chr15:78806023..78817929
+  * WARNING: no SNP map info exists for interval chr15:78867482..78817929
+  * WARNING: no SNP map info exists for interval chr15:78867482..78878541
+  * WARNING: no SNP map info exists for interval chr15:78878541..78806023
+  * WARNING: no SNP map info exists for interval chr15:78878541..78857939
+  * WARNING: no SNP map info exists for interval chr15:78894339..78817929
+  * WARNING: no SNP map info exists for interval chr15:78896129..78806023
+  * WARNING: no SNP map info exists for interval chr15:78896129..78857939
+  * WARNING: no SNP map info exists for interval chr15:78896129..78867482
+  * WARNING: no SNP map info exists for interval chr15:78896129..78894339
+  * WARNING: no SNP map info exists for interval chr15:78896129..78898723
+  * WARNING: no SNP map info exists for interval chr15:78896129..78911181
+  * WARNING: no SNP map info exists for interval chr15:91416550..91428197
+  * WARNING: no SNP map info exists for interval chr15:91416550..91428290
+  * WARNING: no SNP map info exists for interval chr19:45742094..45745607
+  removed 48 intervals due to missing map information
+  13 test elements on gene regions
+  18 non-genic test elements dropped
+
+After merging, 16465 non-overlapping reference genes
+After merging, 4840 non-overlapping genes in target sets
+After merging, 6 non-overlapping intervals
+
+8313 SNP counts assigned
+Precomputing acceptable positions 6
+10000 first-pass permutations ( completed )
+5000 second-pass permutations ( completed )
+
+Total of 6 intervals tested for 206 target sets
+
+Proportion unplaced/self-placed interval/permutations = 8.33333e-05
+
+
+----------------------------------------------------------------
+T_Size  Int_No    Empirical_P Corrected_P     Target
+----------------------------------------------------------------
+     { -- no significant results at p < 0.1 -- }
+
+
+
+----------------------------------------------------------------
+Target_P_Threshold     Uniq_Gene_No_in_Targets      Significance
+----------------------------------------------------------------
+             0.001                           0                 1
+              0.01                           0                 1
+              0.05                           0                 1
+
+
+
+
+Writing output to test.out.inrich ...
+
+----------------------------------------------------------------
+I. Main Analysis Results
+----------------------------------------------------------------
+_O1	T_TARG	N_INT	P	PCORR	LOW_WARN	UNSH	TARGET	EXP_N_INT
+_O1	64	0	1	1	0	0	00010 Glycolysis_/_Gluconeogenesis 	0
+_O1	30	0	1	1	0	0	00020 Citrate_cycle_(TCA_cycle) 	0
+_O1	26	0	1	1	0	0	00030 Pentose_phosphate_pathway 	0
+_O1	22	0	1	1	0	0	00040 Pentose_and_glucuronate_interconversions 	0
+_O1	34	0	1	1	0	0	00051 Fructose_and_mannose_metabolism 	0
+_O1	26	0	1	1	0	0	00052 Galactose_metabolism 	0
+_O1	17	0	1	1	0	0	00053 Ascorbate_and_aldarate_metabolism 	0
+_O1	6	0	1	1	0	0	00061 Fatty_acid_biosynthesis 	0
+_O1	7	0	1	1	0	0	00062 Fatty_acid_elongation_in_mitochondria 	0
+_O1	42	0	1	1	0	0	00071 Fatty_acid_metabolism 	0
+_O1	9	0	1	1	0	0	00072 Synthesis_and_degradation_of_ketone_bodies 	0
+_O1	18	0	1	1	0	0	00100 Steroid_biosynthesis 	0
+_O1	16	0	1	1	0	0	00120 Primary_bile_acid_biosynthesis 	0
+_O1	7	0	1	1	0	0	00130 Ubiquinone_and_other_terpenoid-quinone_biosynthesis 	0
+_O1	47	0	1	1	0	0	00140 Steroid_hormone_biosynthesis 	0
+_O1	116	0	1	1	0	0	00190 Oxidative_phosphorylation 	0
+_O1	157	0	1	1	0	0	00230 Purine_metabolism 	0
+_O1	7	0	1	1	0	0	00232 Caffeine_metabolism 	0
+_O1	95	0	1	1	0	0	00240 Pyrimidine_metabolism 	0
+_O1	32	0	1	1	0	0	00250 Alanine,_aspartate_and_glutamate_metabolism 	0
+_O1	32	1	1	1	0	0	00260 Glycine,_serine_and_threonine_metabolism 	0
+_O1	35	1	1	1	0	0	00270 Cysteine_and_methionine_metabolism 	0
+_O1	43	0	1	1	0	0	00280 Valine,_leucine_and_isoleucine_degradation 	0
+_O1	11	0	1	1	0	0	00290 Valine,_leucine_and_isoleucine_biosynthesis 	0
+_O1	43	0	1	1	0	0	00310 Lysine_degradation 	0
+_O1	53	0	1	1	0	0	00330 Arginine_and_proline_metabolism 	0
+_O1	29	0	1	1	0	0	00340 Histidine_metabolism 	0
+_O1	41	0	1	1	0	0	00350 Tyrosine_metabolism 	0
+_O1	17	0	1	1	0	0	00360 Phenylalanine_metabolism 	0
+_O1	40	0	1	1	0	0	00380 Tryptophan_metabolism 	0
+_O1	5	0	1	1	0	0	00400 Phenylalanine,_tyrosine_and_tryptophan_biosynthesis 	0
+_O1	22	0	1	1	0	0	00410 Beta-Alanine_metabolism 	0
+_O1	10	0	1	1	0	0	00430 Taurine_and_hypotaurine_metabolism 	0
+_O1	26	0	1	1	0	0	00450 Selenoamino_acid_metabolism 	0
+_O1	7	0	1	1	0	0	00460 Cyanoamino_acid_metabolism 	0
+_O1	49	0	1	1	0	0	00480 Glutathione_metabolism 	0
+_O1	42	0	1	1	0	0	00500 Starch_and_sucrose_metabolism 	0
+_O1	48	0	1	1	0	0	00510 N-Glycan_biosynthesis 	0
+_O1	15	0	1	1	0	0	00511 Other_glycan_degradation 	0
+_O1	29	0	1	1	0	0	00512 O-Glycan_biosynthesis 	0
+_O1	47	0	1	1	0	0	00520 Amino_sugar_and_nucleotide_sugar_metabolism 	0
+_O1	19	0	1	1	0	0	00531 Glycosaminoglycan_degradation 	0
+_O1	20	0	1	1	0	0	00532 Glycosaminoglycan_biosynthesis_-_chondroitin_sulfate 	0
+_O1	15	0	1	1	0	0	00533 Glycosaminoglycan_biosynthesis_-_keratan_sulfate 	0
+_O1	26	0	1	1	0	0	00534 Glycosaminoglycan_biosynthesis_-_heparan_sulfate 	0
+_O1	47	0	1	1	0	0	00561 Glycerolipid_metabolism 	0
+_O1	54	0	1	1	0	0	00562 Inositol_phosphate_metabolism 	0
+_O1	25	0	1	1	0	0	00563 Glycosylphosphatidylinositol(GPI)-anchor_biosynthesis 	0
+_O1	74	0	1	1	0	0	00564 Glycerophospholipid_metabolism 	0
+_O1	33	0	1	1	0	0	00565 Ether_lipid_metabolism 	0
+_O1	55	0	1	1	0	0	00590 Arachidonic_acid_metabolism 	0
+_O1	28	0	1	1	0	0	00591 Linoleic_acid_metabolism 	0
+_O1	18	0	1	1	0	0	00592 Alpha-Linolenic_acid_metabolism 	0
+_O1	37	0	1	1	0	0	00600 Sphingolipid_metabolism 	0
+_O1	26	0	1	1	0	0	00601 Glycosphingolipid_biosynthesis_-_lacto_and_neolacto_series 	0
+_O1	14	0	1	1	0	0	00603 Glycosphingolipid_biosynthesis_-_globo_series 	0
+_O1	15	0	1	1	0	0	00604 Glycosphingolipid_biosynthesis_-_ganglio_series 	0
+_O1	40	0	1	1	0	0	00620 Pyruvate_metabolism 	0
+_O1	15	0	1	1	0	0	00630 Glyoxylate_and_dicarboxylate_metabolism 	0
+_O1	32	0	1	1	0	0	00640 Propanoate_metabolism 	0
+_O1	30	0	1	1	0	0	00650 Butanoate_metabolism 	0
+_O1	18	0	1	1	0	0	00670 One_carbon_pool_by_folate 	0
+_O1	10	0	1	1	0	0	00740 Riboflavin_metabolism 	0
+_O1	6	0	1	1	0	0	00750 Vitamin_B6_metabolism 	0
+_O1	23	0	1	1	0	0	00760 Nicotinate_and_nicotinamide_metabolism 	0
+_O1	16	0	1	1	0	0	00770 Pantothenate_and_CoA_biosynthesis 	0
+_O1	11	0	1	1	0	0	00790 Folate_biosynthesis 	0
+_O1	55	0	1	1	0	0	00830 Retinol_metabolism 	0
+_O1	34	0	1	1	0	0	00860 Porphyrin_and_chlorophyll_metabolism 	0
+_O1	15	0	1	1	0	0	00900 Terpenoid_backbone_biosynthesis 	0
+_O1	23	0	1	1	0	0	00910 Nitrogen_metabolism 	0
+_O1	12	0	1	1	0	0	00920 Sulfur_metabolism 	0
+_O1	41	0	1	1	0	0	00970 Aminoacyl-tRNA_biosynthesis 	0
+_O1	62	0	1	1	0	0	00980 Metabolism_of_xenobiotics_by_cytochrome_P450 	0
+_O1	64	0	1	1	0	0	00982 Drug_metabolism_-_cytochrome_P450 	0
+_O1	43	0	1	1	0	0	00983 Drug_metabolism_-_other_enzymes 	0
+_O1	20	0	1	1	0	0	01040 Biosynthesis_of_unsaturated_fatty_acids 	0
+_O1	44	0	1	1	0	0	02010 ABC_transporters 	0
+_O1	86	0	1	1	0	0	03010 Ribosome 	0
+_O1	138	0	1	1	0	0	03013 RNA_transport 	0
+_O1	52	0	1	1	0	0	03018 RNA_degradation 	0
+_O1	29	0	1	1	0	0	03020 RNA_polymerase 	0
+_O1	35	0	1	1	0	0	03022 Basal_transcription_factors 	0
+_O1	36	0	1	1	0	0	03030 DNA_replication 	0
+_O1	118	0	1	1	0	0	03040 Spliceosome 	0
+_O1	44	0	1	1	0	0	03050 Proteasome 	0
+_O1	23	0	1	1	0	0	03060 Protein_export 	0
+_O1	69	0	1	1	0	0	03320 PPAR_signaling_pathway 	0
+_O1	33	0	1	1	0	0	03410 Base_excision_repair 	0
+_O1	44	0	1	1	0	0	03420 Nucleotide_excision_repair 	0
+_O1	23	0	1	1	0	0	03430 Mismatch_repair 	0
+_O1	28	0	1	1	0	0	03440 Homologous_recombination 	0
+_O1	13	0	1	1	0	0	03450 Non-homologous_end-joining 	0
+_O1	85	0	1	1	0	0	04012 ErbB_signaling_pathway 	0
+_O1	175	0	1	1	0	0	04020 Calcium_signaling_pathway 	0.0006
+_O1	183	0	1	1	0	0	04062 Chemokine_signaling_pathway 	0
+_O1	74	0	1	1	0	0	04070 Phosphatidylinositol_signaling_system 	0.0003
+_O1	122	0	1	1	0	0	04110 Cell_cycle 	0
+_O1	111	0	1	1	0	0	04114 Oocyte_meiosis 	0.0003
+_O1	66	0	1	1	0	0	04115 P53_signaling_pathway 	0
+_O1	134	0	1	1	0	0	04120 Ubiquitin_mediated_proteolysis 	0
+_O1	8	0	1	1	0	0	04122 Sulfur_relay_system 	0
+_O1	35	0	1	1	0	0	04130 SNARE_interactions_in_vesicular_transport 	0
+_O1	34	0	1	1	0	0	04140 Regulation_of_autophagy 	0
+_O1	158	0	1	1	0	0	04141 Protein_processing_in_endoplasmic_reticulum 	0
+_O1	120	0	1	1	0	0	04142 Lysosome 	0
+_O1	187	0	1	1	0	0	04144 Endocytosis 	0.0018
+_O1	149	0	1	1	0	0	04145 Phagosome 	0
+_O1	77	0	1	1	0	0	04146 Peroxisome 	0
+_O1	48	0	1	1	0	0	04150 MTOR_signaling_pathway 	0
+_O1	86	0	1	1	0	0	04210 Apoptosis 	0
+_O1	70	0	1	1	0	0	04260 Cardiac_muscle_contraction 	0
+_O1	114	0	1	1	0	0	04270 Vascular_smooth_muscle_contraction 	0.0003
+_O1	149	0	1	1	0	0	04310 Wnt_signaling_pathway 	0
+_O1	24	0	1	1	0	0	04320 Dorso-ventral_axis_formation 	0
+_O1	46	1	1	1	0	0	04330 Notch_signaling_pathway 	0
+_O1	56	0	1	1	0	0	04340 Hedgehog_signaling_pathway 	0
+_O1	84	0	1	1	0	0	04350 TGF-beta_signaling_pathway 	0.0006
+_O1	128	0	1	1	0	0	04360 Axon_guidance 	0
+_O1	74	0	1	1	0	0	04370 VEGF_signaling_pathway 	0
+_O1	195	0	1	1	0	0	04510 Focal_adhesion 	0
+_O1	84	0	1	1	0	0	04512 ECM-receptor_interaction 	0
+_O1	131	0	1	1	0	0	04514 Cell_adhesion_molecules_(CAMs) 	0.0027
+_O1	73	0	1	1	0	0	04520 Adherens_junction 	0
+_O1	128	0	1	1	0	0	04530 Tight_junction 	0
+_O1	88	0	1	1	0	0	04540 Gap_junction 	0
+_O1	68	0	1	1	0	0	04610 Complement_and_coagulation_cascades 	0
+_O1	69	0	1	1	0	0	04612 Antigen_processing_and_presentation 	0
+_O1	17	0	1	1	0	0	04614 Renin-angiotensin_system 	0
+_O1	100	0	1	1	0	0	04620 Toll-like_receptor_signaling_pathway 	0
+_O1	58	0	1	1	0	0	04621 NOD-like_receptor_signaling_pathway 	0
+_O1	68	0	1	1	0	0	04622 RIG-I-like_receptor_signaling_pathway 	0
+_O1	54	0	1	1	0	0	04623 Cytosolic_DNA-sensing_pathway 	0
+_O1	154	0	1	1	0	0	04630 Jak-STAT_signaling_pathway 	0
+_O1	86	0	1	1	0	0	04640 Hematopoietic_cell_lineage 	0
+_O1	131	0	1	1	0	0	04650 Natural_killer_cell_mediated_cytotoxicity 	0
+_O1	108	0	1	1	0	0	04660 T_cell_receptor_signaling_pathway 	0
+_O1	74	0	1	1	0	0	04662 B_cell_receptor_signaling_pathway 	0
+_O1	77	0	1	1	0	0	04664 Fc_epsilon_RI_signaling_pathway 	0
+_O1	90	0	1	1	0	0	04666 Fc_gamma_R-mediated_phagocytosis 	0
+_O1	112	0	1	1	0	0	04670 Leukocyte_transendothelial_migration 	0
+_O1	46	0	1	1	0	0	04672 Intestinal_immune_network_for_IgA_production 	0.0003
+_O1	20	0	1	1	0	0	04710 Circadian_rhythm_-_mammal 	0
+_O1	69	0	1	1	0	0	04720 Long-term_potentiation 	0
+_O1	127	0	1	1	0	0	04722 Neurotrophin_signaling_pathway 	0
+_O1	68	0	1	1	0	0	04730 Long-term_depression 	0
+_O1	48	0	1	1	0	0	04742 Taste_transduction 	0
+_O1	29	0	1	1	0	0	04744 Phototransduction 	0
+_O1	134	0	1	1	0	0	04910 Insulin_signaling_pathway 	0
+_O1	99	0	1	1	0	0	04912 GnRH_signaling_pathway 	0
+_O1	85	0	1	1	0	0	04914 Progesterone-mediated_oocyte_maturation 	0
+_O1	100	0	1	1	0	0	04916 Melanogenesis 	0
+_O1	67	0	1	1	0	0	04920 Adipocytokine_signaling_pathway 	0
+_O1	46	0	1	1	0	0	04930 Type_II_diabetes_mellitus 	0
+_O1	41	0	1	1	0	0	04940 Type_I_diabetes_mellitus 	0
+_O1	24	0	1	1	0	0	04950 Maturity_onset_diabetes_of_the_young 	0
+_O1	41	0	1	1	0	0	04960 Aldosterone-regulated_sodium_reabsorption 	0
+_O1	44	0	1	1	0	0	04962 Vasopressin-regulated_water_reabsorption 	0
+_O1	23	0	1	1	0	0	04964 Proximal_tubule_bicarbonate_reclamation 	0
+_O1	27	0	1	1	0	0	04966 Collecting_duct_acid_secretion 	0
+_O1	85	0	1	1	0	0	04970 Salivary_secretion 	0
+_O1	73	0	1	1	0	0	04971 Gastric_acid_secretion 	0
+_O1	95	0	1	1	0	0	04972 Pancreatic_secretion 	0.0003
+_O1	40	0	1	1	0	0	04973 Carbohydrate_digestion_and_absorption 	0
+_O1	76	0	1	1	0	0	04974 Protein_digestion_and_absorption 	0
+_O1	158	0	1	1	0	0	05010 Alzheimer's_disease 	0
+_O1	114	0	1	1	0	0	05012 Parkinson's_disease 	0
+_O1	53	0	1	1	0	0	05014 Amyotrophic_lateral_sclerosis_(ALS) 	0.0003
+_O1	174	0	1	1	0	0	05016 Huntington's_disease 	0
+_O1	35	0	1	1	0	0	05020 Prion_diseases 	0
+_O1	70	0	1	1	0	0	05100 Bacterial_invasion_of_epithelial_cells 	0
+_O1	53	0	1	1	0	0	05110 Vibrio_cholerae_infection 	0
+_O1	66	0	1	1	0	0	05120 Epithelial_cell_signaling_in_Helicobacter_pylori_infection 	0
+_O1	56	0	1	1	0	0	05130 Pathogenic_Escherichia_coli_infection 	0
+_O1	61	0	1	1	0	0	05131 Shigellosis 	0
+_O1	66	0	1	1	0	0	05140 Leishmaniasis 	0
+_O1	102	0	1	1	0	0	05142 Chagas_disease 	0
+_O1	51	0	1	1	0	0	05144 Malaria 	0
+_O1	125	0	1	1	0	0	05145 Toxoplasmosis 	0
+_O1	102	0	1	1	0	0	05146 Amoebiasis 	0
+_O1	52	0	1	1	0	0	05150 Staphylococcus_aureus_infection 	0
+_O1	132	1	1	1	0	0	05160 Hepatitis_C 	0
+_O1	62	0	1	1	0	0	05210 Colorectal_cancer 	0
+_O1	70	0	1	1	0	0	05211 Renal_cell_carcinoma 	0
+_O1	70	0	1	1	0	0	05212 Pancreatic_cancer 	0
+_O1	52	0	1	1	0	0	05213 Endometrial_cancer 	0
+_O1	63	0	1	1	0	0	05214 Glioma 	0
+_O1	88	0	1	1	0	0	05215 Prostate_cancer 	0
+_O1	29	0	1	1	0	0	05216 Thyroid_cancer 	0
+_O1	55	0	1	1	0	0	05217 Basal_cell_carcinoma 	0
+_O1	71	0	1	1	0	0	05218 Melanoma 	0
+_O1	42	0	1	1	0	0	05219 Bladder_cancer 	0
+_O1	72	0	1	1	0	0	05220 Chronic_myeloid_leukemia 	0
+_O1	56	0	1	1	0	0	05221 Acute_myeloid_leukemia 	0
+_O1	83	0	1	1	0	0	05222 Small_cell_lung_cancer 	0
+_O1	53	0	1	1	0	0	05223 Non-small_cell_lung_cancer 	0
+_O1	28	0	1	1	0	0	05310 Asthma 	0
+_O1	50	0	1	1	0	0	05320 Autoimmune_thyroid_disease 	0
+_O1	124	0	1	1	0	0	05322 Systemic_lupus_erythematosus 	0
+_O1	35	0	1	1	0	0	05330 Allograft_rejection 	0
+_O1	37	0	1	1	0	0	05332 Graft-versus-host_disease 	0
+_O1	35	0	1	1	0	0	05340 Primary_immunodeficiency 	0
+_O1	83	0	1	1	0	0	05410 Hypertrophic_cardiomyopathy_(HCM) 	0
+_O1	74	0	1	1	0	0	05412 Arrhythmogenic_right_ventricular_cardiomyopathy_(ARVC) 	0
+_O1	90	0	1	1	0	0	05414 Dilated_cardiomyopathy 	0
+_O1	68	0	1	1	0	0	05416 Viral_myocarditis 	0.0009
+
+
+
+----------------------------------------------------------------
+II. Interval-Gene-Target Summary
+----------------------------------------------------------------
+_O2	INTERVAL	GENE_LOC	GENE_ID	GENE_DESC	TARGET	P
+_O2	int24,int30,int142,int39:chr12:111973358..112486818	chr12:112314613..112326095	10993	SDS Serine dehydratase  	00260 Glycine,_serine_and_threonine_metabolism 	1
+_O2	int24,int30,int142,int39:chr12:111973358..112486818	chr12:112314613..112326095	10993	SDS Serine dehydratase  	00270 Cysteine_and_methionine_metabolism 	1
+_O2	int24,int30,int142,int39:chr12:111973358..112486818	chr12:111980024..112020236	1840	DTX1 Deltex homolog 1 (Drosophila)  	04330 Notch_signaling_pathway 	1
+_O2	int0,int1:chr12:111833788..111932800	chr12:111829101..111842115	4938	OAS1 2',5'-oligoadenylate synthetase 1, 40/46kDa  	05160 Hepatitis_C 	1
+_O2	int0,int1:chr12:111833788..111932800	chr12:111860611..111895458	4940	OAS3 2'-5'-oligoadenylate synthetase 3, 100kDa  	05160 Hepatitis_C 	1
+_O2	int0,int1:chr12:111833788..111932800	chr12:111900636..111933931	4939	OAS2 2'-5'-oligoadenylate synthetase 2, 69/71kDa  	05160 Hepatitis_C 	1
+
+
+
+----------------------------------------------------------------
+III. Interval Summary
+----------------------------------------------------------------
+_O3	INTERVAL	N_SNP	N_ALTLOC	N_GENE	GENE_ID	GENE_DESC
+_O3	int0,int1:chr12:111833788..111932800	1	0	3	4938	OAS1 2',5'-oligoadenylate synthetase 1, 40/46kDa 
+_O3	int0,int1:chr12:111833788..111932800	1	0	3	4940	OAS3 2'-5'-oligoadenylate synthetase 3, 100kDa 
+_O3	int0,int1:chr12:111833788..111932800	1	0	3	4939	OAS2 2'-5'-oligoadenylate synthetase 2, 69/71kDa 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	1840	DTX1 deltex homolog 1 (Drosophila) 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	8437	RASAL1 RAS protein activator like 1 (GAP1 like) 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	79039	DDX54 DEAD (Asp-Glu-Ala-Asp) box polypeptide 54 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	84934	C12orf52 chromosome 12 open reading frame 52 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	115811	IQCD IQ motif containing D 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	53373	TPCN1 two pore segment channel 1 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	80024	SLC24A6 solute carrier family 24 (sodium/potassium/calcium exchanger), member 6 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	10993	SDS serine dehydratase 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	113675	SDSL serine dehydratase-like 
+_O3	int24,int30,int142,int39:chr12:111973358..112486818	5	5	10	64211	LHX5 LIM homeobox 5 
+_O3	int144:chr15:78817929..78857939	7	29	1	58489	FAM108C1 family with sequence similarity 108, member C1 
+_O3	int140,int12,int141:chr15:78878541..78911181	1	0	1	57214	KIAA1199 KIAA1199 
+_O3	int86,int47:chr19:11188153..11202306	1	0	1	57572,55908	DOCK6,LOC55908 dedicator of cytokinesis 6 ; hepatocellular carcinoma-associated gene TD26 ; 
+_O3	int61:chr19:18454825..18460956	1	0	1	8178	ELL elongation factor RNA polymerase II 
