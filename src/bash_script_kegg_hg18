@@ -2,15 +2,15 @@
 #linking lifespan with disease domains
 
 ../../bin/statgen-inrich-30c7f7e93e2a/inrich \
--m ../input_files/reference_snp.snps \
--a ../input_files/associated_lifespan_intervals.dat \
+-m ../input_files/merged_ref_sep.snps \
+-a ../input_files/sorted_associated_lifespan_intervals.dat \
 -g ../input_files/entrez.gene.map \
 -t ../input_files/kegg.set \
 -w 20 \
 -r 10000 \
 -q 5000 \
--i 5 \
+-i 2 \
 -j 200 \
 -d 0.1 \
 -p 0.1 \
--z 3
+-z 1
